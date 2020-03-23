@@ -6,6 +6,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy
 import os
+import time
+import csv
+import sys
+import os 
 
 ### Function that gets the number of cases from the URL
 def scrapeNumbers(URL, inputClass):
@@ -62,7 +66,7 @@ def getSavedData():
     data = []
     #dates = numpy.array()
     ##Opens the text file
-    with open('savedData.txt', 'r') as dataFile:
+    with open('savedDataUS.txt', 'r') as dataFile:
         ##Reads each line of data
         for line in dataFile: 
             ##Tokenizes the data points 
@@ -104,16 +108,15 @@ def addTo(date, data):
 
     ##String can holds all of the data collected
     dataString = '{} {} {}'.format(confirmedCases, deaths, recovered)
-
     ## Variable to check if the date for today was already added to the file
     dateSaved = False
     ##Variable to check if the user wants to override data for today
     userInput = ''
     
-    file_path = 'savedData.txt'
+    file_path = 'savedDataUS.txt'
 
     if os.path.getsize(file_path) == 0:
-        with open('savedData.txt', 'w') as dataFile:
+        with open('savedDataUS.txt', 'w') as dataFile:
             ##Appends to the data file with the data and count for that date
             dataFile.write(date + ':' + dataString + '\n')
     else:
@@ -129,7 +132,7 @@ def addTo(date, data):
         ## If the date was not already added or the user wants to override the data
         if dateSaved == False:
             ## Opens the data file
-            with open('savedData.txt', 'a') as dataFile:
+            with open('savedDataUS.txt', 'a') as dataFile:
                 ##Appends to the data file with the data and count for that date
                 dataFile.write(date + ':' + dataString + '\n')
             
@@ -140,54 +143,102 @@ def addTo(date, data):
             index = datesSaved.index(date)
             dataSaved[index] = data
             ##Open the data file
-            with open('savedData.txt', 'w') as DataFile:
+            with open('savedDataUS.txt', 'w') as DataFile:
                 ##for each data point in saved data
                 for i in datesSaved:
                     DataFile.write(i + ':' + dataString + '\n')
 
+##Function plots a graph
+def plot():
 
+    ## Collects the dates and data from the text file
+    (dates, data) = getSavedData()
 
+    ## Creates separate arrays for each data set
+    cases = []
+    deaths = []
+    recovered = []
 
+    ## Creates the dates into a numpy array
+    numpyDates = numpy.array(dates)
 
+    ##Iterates through each of the data sets and appends them
+    for i in range(0, len(data)):
+        cases.append(data[i][0])
+        deaths.append(data[i][1])
+        recovered.append(data[i][2])
 
+    ## Plots and labels
+    plt.plot(numpyDates, numpy.array(cases), label = 'Total Confirmed')
+    plt.plot(numpyDates, numpy.array(deaths), label = 'Deaths')
+    plt.plot(numpyDates, numpy.array(recovered), label = 'Recovered')
 
-dataSet = scrapeNumbers('https://www.worldometers.info/coronavirus/country/us/', 'maincounter-number')
-US_population = scrapeNumbers('https://www.worldometers.info/world-population/us-population/', 'col-md-8 country-pop-description')
+    ## Plot style
+    plt.ylabel('Cases')
+    plt.title('COVID-19 Cases in the United States')
+    plt.legend()
 
-##  data[0] = Confirmed Corona Cases
-##  data[1] = Deaths
-##  data[2] = Recovered
+## Function that gets the daily Update of the graph
+def dailyUpdate():
+    dataSet = scrapeNumbers('https://www.worldometers.info/coronavirus/country/us/', 'maincounter-number')
+    US_population = scrapeNumbers('https://www.worldometers.info/world-population/us-population/', 'col-md-8 country-pop-description')
+    #dataSet.insert(0, US_population[0])
 
-#dataSet.insert(0, US_population[0])
+    ## Gets todays date
+    date = datetime.datetime.today().strftime('%d-%m-%Y')
+    addTo(date, dataSet)    
 
+## Function that gets the Past Data from CSV Files
+def getPastData():
+    ## Variables to hold the data
+    dates = []
+    cases = []
+    deaths = []
+    recovered = []
 
-## Gets todays date
-date = datetime.datetime.today().strftime('%d-%m-%Y')
+    ## Opens the csv Files
+    with open('total_cases.csv') as csvfile:
+        ##tokenizes each value after a comma 
+        readCSV = csv.reader(csvfile, delimiter = ',')
+        ## Checks each row in the file
+        for row in readCSV:
+            ## Trys to cast string into an int
+            try:
+                cases.append(int(row[len(row) - 8]))
+                recovered.append(0)
+            ## If fails then continue to the next index
+            except:
+                continue
+            ##Reconstructs the date into the desired format
+            date = row[0].split('-')
+            year = date[0]
+            month = date[1]
+            day = date[2]
+            reconstructedDate = '{}-{}-{}'.format(day, month, year)
+            ## Appends the date to the date array
+            dates.append(reconstructedDate)
 
-#addTo(date, dataSet)
-#addTo('23-03-2020', [678, 756, 78])
-#addTo('24-03-2020', [4234, 23423, 2342])
+    ## Opens the csv file
+    with open('total_deaths.csv') as csvfile:
+        ##Tokenizes each element after comma
+        readCSV = csv.reader(csvfile, delimiter = ',')
+        ## Checks each row in the file
+        for row in readCSV:
+            ## Trys to cast string into an int
+            try: 
+                deaths.append(int(row[len(row) - 8])) 
+            ## If fail, then continue to next index 
+            except:
+                continue  
+    
+    ## Loops through each index
+    for i in range(0, len(dates)):
+        ## Adds each data set into the file
+       addTo(dates[i], [cases[i], deaths[i], recovered[i]])
+        
 
-(dates, data) = getSavedData()
-
-cases = []
-deaths = []
-recovered = []
-
-numpyDates = numpy.array(dates)
-
-for i in range(0, len(data)):
-    cases.append(data[i][0])
-    deaths.append(data[i][1])
-    recovered.append(data[i][2])
-
-plt.plot(numpyDates, numpy.array(cases), label = 'Total Confirmed')
-plt.plot(numpyDates, numpy.array(deaths), label = 'Deaths')
-plt.plot(numpyDates, numpy.array(recovered), label = 'Recovered')
-
-
-plt.xlabel('Date (D-M-Y)')
-plt.ylabel('Cases')
-plt.title('COVID-19 Cases in the United States')
-plt.legend()
+#getPastData()
+#dailyUpdate()
+plot()
 plt.show()
+
