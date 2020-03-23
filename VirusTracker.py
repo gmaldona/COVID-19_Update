@@ -238,7 +238,7 @@ def getPastData():
         
 
 #getPastData()
-#dailyUpdate()
-plot()
-plt.show()
+dailyUpdate()
+#plot()
+#plt.show()
 
