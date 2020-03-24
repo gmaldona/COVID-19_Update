@@ -25,3 +25,7 @@ def getSavedData():
 def addTo(date, data):
  ```
  This function adds the `date` and `data` to the .txt file
+ ```Python3
+ def getPastData():
+ ```
+ This function reads the CSV files within the file `total_cases.csv` and `total_deaths.csv` and adds the data for the United States to the .txt file
