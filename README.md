@@ -11,7 +11,7 @@ MatPlotLib | Visualizing Data
 NumPy | Data Structure
 CSV | Data Reading
 
-<img src = "Graph.png" width=250 style="float: left; margin-right: 10px;"/>
+<img src = "Graph.png" width=400 style="float: left: 10px;"/>
 
 ## This Script Consists of 6 Main Functions:
 ```Python3
