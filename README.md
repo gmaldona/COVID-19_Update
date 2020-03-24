@@ -3,14 +3,9 @@ Web scraper and data analysis for COVID-19
 
 ## Modules Used:
 <html>
-   <head>
-      <style>
-         display: inline;
-      </style>
-   </head>
    <body>
       <p align="center">
-         <img src = "Graph.png" width=400/>
+         <img src = "Graph.png" width=400 style= "display: inline;"/>
       </p>
       <table style="width:100%">   
         <tr>
