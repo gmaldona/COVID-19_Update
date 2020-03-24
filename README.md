@@ -2,6 +2,7 @@
 Web scraper and data analysis for COVID-19 
 
 ## Modules Used:
+<html>
 <head>
    <style>
       display: inline;
@@ -37,7 +38,7 @@ Web scraper and data analysis for COVID-19
     <td>Data Reading</td>
   </tr>
 </table>
-
+</html>
 ## This Script Consists of 6 Main Functions:
 ```Python3
 def scrapeNumbers(URL, inputClass):
