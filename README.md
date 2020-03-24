@@ -2,6 +2,11 @@
 Web scraper and data analysis for COVID-19 
 
 ## Modules Used:
+<head>
+   <style>
+      display: inline;
+   </style>
+</head>
 <p align="center">
    <img src = "Graph.png" width=400/>
 </p>
