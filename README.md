@@ -29,11 +29,6 @@ CSV | Data Reading
     <td>Jackson</td>
     <td>94</td>
   </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
 </table>
 
 ## This Script Consists of 6 Main Functions:
