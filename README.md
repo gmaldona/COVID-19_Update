@@ -8,6 +8,7 @@ Web scraper and data analysis for COVID-19
 </html>
    
 ## Modules Used:
+
 <html>
    <body>
         <tr>
