@@ -20,8 +20,19 @@ CSV | Data Reading
   </tr>
   <tr>
     <td>Beautiful Soup</td>
+    <td>Web Scraping</td>
+  </tr>
+  <tr>
     <td>Requests</td>
-    <td>50</td>
+    <td>URL Requests</td>
+  </tr>
+  <tr>
+    <td>Matplotlib</td>
+    <td>Visualizing Data</td>
+  </tr>
+  <tr>
+    <td>Numpy</td>
+    <td>Data Structure</td>
   </tr>
 </table>
 
