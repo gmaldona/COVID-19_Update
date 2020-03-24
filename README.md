@@ -1,11 +1,12 @@
 # COVID-19 Automated Update
 Web scraper and data analysis for COVID-19 
-
-## Modules Used:
 <html>
    <body>
       <img src = "Graph.png" width=700 align="left"/> <p> <b>This graph was last updated March 23, 2020</b> </p>
       <table style="width:100%">
+   </body>
+</html>
+## Modules Used:
         <tr>
           <th>Modules</th>
           <th>Purpose</th> 
@@ -31,8 +32,6 @@ Web scraper and data analysis for COVID-19
           <td>Data Reading</td>
         </tr>
       </table> 
-   </body>
-</html>
 
 ## This Script Consists of 6 Main Functions:
 ```Python3
