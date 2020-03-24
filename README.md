@@ -16,3 +16,8 @@ CSV | Data Reading
 def ScrapeNumbers(URL, inputClass):
 ```
 This function requests the `URL` and finds the HTML div with the label of `inputClass` and returns data collected from the website
+```Python3
+def getSavedData():
+ ```
+ This function return two arrays: `dateArray` and `data`
+ The arrays are pulled from a .txt file that contains dates and their respective set of data
