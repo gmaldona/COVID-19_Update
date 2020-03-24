@@ -10,7 +10,8 @@ Web scraper and data analysis for COVID-19
 ## Modules Used:
 
 |Modules: | Purpose: |
-|-----|-----
+|---------|----------|
+|Beautiful Soup | Web Scraping | 
 
 <html>
    <body>
