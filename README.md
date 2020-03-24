@@ -5,7 +5,7 @@ Web scraper and data analysis for COVID-19
 <html>
    <body>
       <p align="center">
-         <img src = "Graph.png" width=400 style= "display: inline;"/>
+         <img src = "Graph.png" width=400/>
       </p>
       <table style="width:100%">   
         <tr>
