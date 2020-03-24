@@ -1,7 +1,7 @@
 # COVID-19 Automated Update
 Web scraper and data analysis for COVID-19 
 
-### Modules Used:
+## Modules Used:
 
 Library:      | Purpose:
 ------------- | -------------
@@ -11,5 +11,7 @@ MatPlotLib | Visualizing Data
 NumPy | Data Structure
 CSV | Data Reading
 
+## This Script Consists of 6 Main Functions:
 
-
+```Python3
+def ScrapeNumbers
