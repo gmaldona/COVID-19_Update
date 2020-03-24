@@ -2,18 +2,11 @@
 Web scraper and data analysis for COVID-19 
 
 ## Modules Used:
-
-Library:      | Purpose:
-------------- | -------------
-Beautiful Soup  | Web Scraping
-Requests  | URL Requests
-MatPlotLib | Visualizing Data
-NumPy | Data Structure
-CSV | Data Reading
 <p align="center">
    <img src = "Graph.png" width=400/>
 </p>
 <table style="width:100%">
+   
   <tr>
     <th>Modules</th>
     <th>Purpose</th> 
@@ -27,12 +20,16 @@ CSV | Data Reading
     <td>URL Requests</td>
   </tr>
   <tr>
-    <td>Matplotlib</td>
+    <td>MatPlotLib</td>
     <td>Visualizing Data</td>
   </tr>
   <tr>
-    <td>Numpy</td>
+    <td>NumPy</td>
     <td>Data Structure</td>
+  </tr>
+  <tr>
+    <td>CSV</td>
+    <td>Data Reading</td>
   </tr>
 </table>
 
