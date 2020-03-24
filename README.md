@@ -12,8 +12,7 @@ NumPy | Data Structure
 CSV | Data Reading
 
 ## This Script Consists of 6 Main Functions:
-
-This function requests the `URL` and finds the HTML div with the label of `inputClass` and returns data collected from the website
 ```Python3
 def ScrapeNumbers(URL, inputClass):
 ```
+This function requests the `URL` and finds the HTML div with the label of `inputClass` and returns data collected from the website
