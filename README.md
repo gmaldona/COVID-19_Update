@@ -4,7 +4,7 @@ Web scraper and data analysis for COVID-19
    <body>
       <img src = "Graph.png" width=700 align="center"/>
       <table style="width:100%">
-      <b>This graph was last updated March 23, 2020</b>
+      <b>***This graph was last updated March 23, 2020***</b>
    </body>
 </html>
    
