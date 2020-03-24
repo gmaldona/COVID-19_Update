@@ -3,7 +3,6 @@ Web scraper and data analysis for COVID-19
 
 ## Modules Used:
 <html>
-   <title></title>
    <head>
       <style>
          img {
