@@ -6,7 +6,10 @@ Web scraper and data analysis for COVID-19
       <table style="width:100%">
    </body>
 </html>
+   
 ## Modules Used:
+<html>
+   <body>
         <tr>
           <th>Modules</th>
           <th>Purpose</th> 
@@ -32,6 +35,8 @@ Web scraper and data analysis for COVID-19
           <td>Data Reading</td>
         </tr>
       </table> 
+   <body>
+<html>
 
 ## This Script Consists of 6 Main Functions:
 ```Python3
