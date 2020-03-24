@@ -11,37 +11,11 @@ Web scraper and data analysis for COVID-19
 
 |Modules: | Purpose: |
 |---------|----------|
-|Beautiful Soup | Web Scraping | 
-
-<html>
-   <body>
-        <tr>
-          <th>Modules</th>
-          <th>Purpose</th> 
-        </tr>
-        <tr>
-          <td>Beautiful Soup</td>
-          <td>Web Scraping</td>
-        </tr>
-        <tr>
-          <td>Requests</td>
-          <td>URL Requests</td>
-        </tr>
-        <tr>
-          <td>MatPlotLib</td>
-          <td>Visualizing Data</td>
-        </tr>
-        <tr>
-          <td>NumPy</td>
-          <td>Data Structure</td>
-        </tr>
-        <tr>
-          <td>CSV</td>
-          <td>Data Reading</td>
-        </tr>
-      </table> 
-   <body>
-<html>
+| Beautiful Soup | Web Scraping | 
+| Requests | URL Requests |
+| MatPlotLib | Visualizing Data |
+| NumPy | Data Structure |
+| CSV | Data Reading |
 
 ## This Script Consists of 6 Main Functions:
 ```Python3
