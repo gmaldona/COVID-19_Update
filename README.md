@@ -3,7 +3,7 @@ Web scraper and data analysis for COVID-19
 
 ### Libraries Used 
 
-First Header  | Second Header
+Library:      | Purpose:
 ------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
