@@ -5,6 +5,11 @@ Web scraper and data analysis for COVID-19
 
 Library:      | Purpose:
 ------------- | -------------
-Beautiful Soup  | Content Cell
-Content Cell  | Content Cell
+Beautiful Soup  | Web Scraping
+Requests  | URL Requests
+MatPlotLib | Visualizing Data
+NumPy | Data Structure
+CSV | Data Reading
+
+
 
