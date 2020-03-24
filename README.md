@@ -13,7 +13,7 @@ CSV | Data Reading
 
 ## This Script Consists of 6 Main Functions:
 
-This function requests the `URL` and finds the HTML Div with the label of `inputClass`
+This function requests the `URL` and finds the HTML div with the label of `inputClass`
 ```Python3
 def ScrapeNumbers(URL, inputClass):
 ```
