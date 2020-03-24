@@ -21,3 +21,7 @@ def getSavedData():
  ```
  This function return two arrays: `dateArray` and `data`
  The arrays are pulled from a .txt file that contains dates and their respective set of data
+```Python3
+def addTo(date, data):
+ ```
+ This function adds the `date` and `data` to the .txt file
