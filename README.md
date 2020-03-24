@@ -20,7 +20,7 @@ CSV | Data Reading
   </tr>
   <tr>
     <td>Beautiful Soup</td>
-    <td>Smith</td>
+    <td>Requests</td>
     <td>50</td>
   </tr>
 </table>
