@@ -11,7 +11,7 @@ Web scraper and data analysis for COVID-19
          table {
             display: inline;
          }
-      <style>
+      </style>
    </head>
    <body>
       <p align="center">
