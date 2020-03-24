@@ -3,41 +3,42 @@ Web scraper and data analysis for COVID-19
 
 ## Modules Used:
 <html>
-<head>
-   <style>
-      display: inline;
-   </style>
-</head>
-<p align="center">
-   <img src = "Graph.png" width=400/>
-</p>
-<table style="width:100%">
-   
-  <tr>
-    <th>Modules</th>
-    <th>Purpose</th> 
-  </tr>
-  <tr>
-    <td>Beautiful Soup</td>
-    <td>Web Scraping</td>
-  </tr>
-  <tr>
-    <td>Requests</td>
-    <td>URL Requests</td>
-  </tr>
-  <tr>
-    <td>MatPlotLib</td>
-    <td>Visualizing Data</td>
-  </tr>
-  <tr>
-    <td>NumPy</td>
-    <td>Data Structure</td>
-  </tr>
-  <tr>
-    <td>CSV</td>
-    <td>Data Reading</td>
-  </tr>
-</table>
+   <head>
+      <style>
+         display: inline;
+      </style>
+   </head>
+   <body>
+      <p align="center">
+         <img src = "Graph.png" width=400/>
+      </p>
+      <table style="width:100%">   
+        <tr>
+          <th>Modules</th>
+          <th>Purpose</th> 
+        </tr>
+        <tr>
+          <td>Beautiful Soup</td>
+          <td>Web Scraping</td>
+        </tr>
+        <tr>
+          <td>Requests</td>
+          <td>URL Requests</td>
+        </tr>
+        <tr>
+          <td>MatPlotLib</td>
+          <td>Visualizing Data</td>
+        </tr>
+        <tr>
+          <td>NumPy</td>
+          <td>Data Structure</td>
+        </tr>
+        <tr>
+          <td>CSV</td>
+          <td>Data Reading</td>
+        </tr>
+      </table>
+   </body>
 </html>
 ## This Script Consists of 6 Main Functions:
 ```Python3
