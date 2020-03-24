@@ -35,6 +35,7 @@ Web scraper and data analysis for COVID-19
       </table>
    </body>
 </html>
+
 ## This Script Consists of 6 Main Functions:
 ```Python3
 def scrapeNumbers(URL, inputClass):
