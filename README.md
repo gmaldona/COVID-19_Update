@@ -10,8 +10,9 @@ Requests  | URL Requests
 MatPlotLib | Visualizing Data
 NumPy | Data Structure
 CSV | Data Reading
-
-<img src = "Graph.png" width=400 style="float: left: 10px;"/>
+<p align="center">
+   <img src = "Graph.png" width=400/>
+</p>
 
 ## This Script Consists of 6 Main Functions:
 ```Python3
