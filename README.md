@@ -29,3 +29,11 @@ def addTo(date, data):
  def getPastData():
  ```
  This function reads the CSV files within the file `total_cases.csv` and `total_deaths.csv` and adds the data for the United States to the .txt file
+ ```Python3
+ def update():
+ ```
+ This function updates the .txt file with the data for the current day
+ ```Python3
+ def plot():
+ ```
+ This function contains the styling and functions of the plot 
