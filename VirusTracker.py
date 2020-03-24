@@ -126,8 +126,9 @@ def addTo(date, data):
         if date in datesSaved:
             ##If the data is saved then it checks to see if the user wants to override the data
             dateSaved = True
-            rInput = input('Date is already saved, override data? (y/n): ')
-            userInput = rInput
+            # rInput = input('Date is already saved, override data? (y/n): ')
+            # userInput = rInput
+            print('Data for today was already recorded...')
 
         ## If the date was not already added or the user wants to override the data
         if dateSaved == False:
@@ -177,6 +178,9 @@ def plot():
     plt.ylabel('Cases')
     plt.title('COVID-19 Cases in the United States')
     plt.legend()
+
+    ## X-axis
+    plt.xticks("")
 
 ## Function that gets the daily Update of the graph
 def dailyUpdate():
@@ -238,7 +242,7 @@ def getPastData():
         
 
 #getPastData()
-dailyUpdate()
-#plot()
-#plt.show()
+#dailyUpdate()
+plot()
+plt.show()
 
