@@ -17,3 +17,4 @@ This function requests the `URL` and finds the HTML div with the label of `input
 ```Python3
 def ScrapeNumbers(URL, inputClass):
 ```
+Returns an array of data collected from the website
